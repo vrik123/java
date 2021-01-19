@@ -12,7 +12,7 @@ public class AccountantDao {
 		Connection con=null;
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/test","","");
+			con=DriverManager.getConnection("jdbc:mysql://test.cmqaetb0osxr.us-east-1.rds.amazonaws.com:3306/test","admin","admin123");
 		}catch(Exception e){System.out.println(e);}
 		return con;
 	}
